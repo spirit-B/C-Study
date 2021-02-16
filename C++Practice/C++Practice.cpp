@@ -2,37 +2,25 @@
 
 using namespace std;
 
-namespace silla
-{
-	int year = 935;
+int x = 10;
 
-	void CentralArea()
-	{
-		cout << "경상도" << endl;
-	}
+int Func1()
+{
+	int y = x + 10;
+	return y;
 }
 
-namespace baekjae
+int Func2()
 {
-	int year = 660;
-
-	void CentralArea()
-	{
-		cout << "충청도" << endl;
-	}
+	int x = 100;
+	return x;
 }
-
-using namespace silla;
-using namespace baekjae;
 
 int main()
 {
-	cout << "신라 중심지 : ";
-	silla::CentralArea();
-	cout << "신라 멸망연도 : " << silla::year << endl;
-	cout << "백제 중심지 : ";
-	baekjae::CentralArea();
-	cout << "백제 멸망연도 : " << baekjae::year << endl;
+	cout << "y = " << Func1() << endl;
+	cout << "x = " << Func2() << endl;
+	cout << "x = " << x << endl;
 
 	return 0;
 }
