@@ -2,21 +2,37 @@
 
 using namespace std;
 
-void Minus(const int x, const int y)
+namespace silla
 {
-	cout << "x - y = " << x - y << endl;
+	int year = 935;
+
+	void CentralArea()
+	{
+		cout << "경상도" << endl;
+	}
 }
 
-int Plus(const int x, const int y)
+namespace baekjae
 {
-	return x + y;
+	int year = 660;
+
+	void CentralArea()
+	{
+		cout << "충청도" << endl;
+	}
 }
+
+using namespace silla;
+using namespace baekjae;
+
 int main()
 {
-	Minus(10, 5);
-
-	cout << "x + y = " << Plus(2, 6) << endl;
+	cout << "신라 중심지 : ";
+	silla::CentralArea();
+	cout << "신라 멸망연도 : " << silla::year << endl;
+	cout << "백제 중심지 : ";
+	baekjae::CentralArea();
+	cout << "백제 멸망연도 : " << baekjae::year << endl;
 
 	return 0;
 }
-
