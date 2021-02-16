@@ -1,0 +1,2 @@
+C:\Users\BJH\Desktop\C++Study\C-Study\C++Practice\x64\Debug\C++Practice.exe
+C:\Users\BJH\Desktop\C++Study\C-Study\C++Practice\x64\Debug\C++Practice.pdb
