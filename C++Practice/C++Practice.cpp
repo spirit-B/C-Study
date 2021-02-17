@@ -2,25 +2,30 @@
 
 using namespace std;
 
-int x = 10;
-
-int Func1()
-{
-	int y = x + 10;
-	return y;
-}
-
-int Func2()
-{
-	int x = 100;
-	return x;
-}
-
 int main()
 {
-	cout << "y = " << Func1() << endl;
-	cout << "x = " << Func2() << endl;
-	cout << "x = " << x << endl;
+	int x = 10;
+	int y = 6;
+
+	bool is_true = false;
+
+	if (x > y)
+	{
+		is_true = true;
+	}
+	else
+	{
+		is_true = false;
+	}
+
+	if (is_true == true)
+	{
+		cout << "x는 y보다 큽니다." << endl;
+	}
+	else
+	{
+		cout << "x는 y보다 작습니다." << endl;
+	}
 
 	return 0;
 }
